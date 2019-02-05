@@ -23,7 +23,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
     db.collection('Users').insertOne({
         name: 'Julia',
         age: 25,
-        location: 'Maryland'
+        location: 'USA'
     }, (err, result) => {
         if (err) {
             return console.log('Unable to insert Users', err)
