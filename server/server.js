@@ -1,7 +1,9 @@
+require('./config/config');
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT; //no need to set || 3000 here bc dev/test environment has 3000 as default
 
 const { ObjectID } = require('mongodb');
 const mongoose = require('./db/mongoose.js');
